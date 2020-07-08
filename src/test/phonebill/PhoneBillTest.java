@@ -1,4 +1,4 @@
-package test;
+package test.phonebill;
 
 import phonebill.DataBundle;
 import phonebill.PhoneBill;
@@ -96,4 +96,22 @@ public class PhoneBillTest {
         assertEquals(2501.848, phoneBill.totalCost(), 0.001);
     }
 
+
+    public static class PhoneCallTest {
+        @Test
+        public void numberOfCallsWhereDeducted() {
+            PhoneBill phoneBill = new PhoneBill();
+            PhoneCall phoneCall = new PhoneCall(0.34);
+
+
+            phoneBill.acceptBillCost(phoneCall);
+            phoneBill.acceptBillCost(phoneCall);
+            phoneBill.acceptBillCost(phoneCall);
+            phoneBill.acceptBillCost(phoneCall);
+            phoneBill.acceptBillCost(phoneCall);
+            phoneBill.acceptBillCost(phoneCall);
+
+            assertEquals(2.04, phoneBill.totalCost(), 0.00);
+        }
+    }
 }
