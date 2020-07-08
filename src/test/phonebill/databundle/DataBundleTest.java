@@ -13,7 +13,7 @@ public class DataBundleTest {
          PhoneBill phoneBill = new PhoneBill();
          DataBundle dataBundle = new DataBundle(200);
 
-         phoneBill.acceptBillCost(dataBundle);
+            phoneBill.acceptBillCost(dataBundle);
 
          assertEquals(150, phoneBill.totalCost(), 0);
      }

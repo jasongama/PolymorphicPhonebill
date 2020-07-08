@@ -1,6 +1,6 @@
 package phonebill;
 
-public class PhoneCall extends PhoneBill {
+public class PhoneCall implements BillAction {
     private  double total = 0;
     public PhoneCall(double phoneCall) {
         total += phoneCall;

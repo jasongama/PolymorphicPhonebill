@@ -1,6 +1,6 @@
 package phonebill;
 
-public class PhoneBill implements BillAction {
+public class PhoneBill  {
     private double total = 0;
 
     public void acceptBillCost(BillAction billAction) {
@@ -8,7 +8,7 @@ public class PhoneBill implements BillAction {
         total += billAction.totalCost();
     }
 
-    @Override
+
     public double totalCost() {
 
         return total;

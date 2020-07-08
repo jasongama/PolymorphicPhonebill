@@ -1,6 +1,6 @@
 package phonebill;
 
-public class SmsBundle extends PhoneBill {
+public class SmsBundle implements BillAction {
     private double  total = 0;
 
     public SmsBundle(double qty, double sms){

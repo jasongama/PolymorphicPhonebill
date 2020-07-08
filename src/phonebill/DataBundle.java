@@ -1,6 +1,6 @@
 package phonebill;
 
-public class DataBundle extends PhoneBill {
+public class DataBundle implements BillAction {
     private double total = 0;
 
     public DataBundle(double megabyte) {
