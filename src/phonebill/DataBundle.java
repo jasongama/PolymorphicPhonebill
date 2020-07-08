@@ -5,14 +5,14 @@ public class DataBundle extends PhoneBill {
 
     public DataBundle(double megabyte) {
         if (megabyte < 500) {
-            total = 0.75 * 500;
+            total = 0.75 * megabyte;
         } else if (megabyte > 500) {
-            total = 0.55 * 500;
+            total = 0.55 * megabyte;
         } else if (megabyte > 1000) {
 
-            total = 0.35 * 1000;
+            total = 0.35 * megabyte;
         } else {
-            total = 0;
+            total = megabyte;
         }
 
     }

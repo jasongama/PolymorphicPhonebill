@@ -57,7 +57,7 @@ public class PhoneBillTest {
         phoneBill.acceptBillCost(dataBundle);
 
 
-        assertEquals(2200, phoneBill.totalCost(), 0);
+        assertEquals(5412, phoneBill.totalCost(), 0);
     }
     @Test
     public void numberCallsAndSmsBundlesWhereDeducted() {
@@ -93,7 +93,7 @@ public class PhoneBillTest {
         phoneBill.acceptBillCost(dataBundle);
         phoneBill.acceptBillCost(dataBundle);
 
-        assertEquals(1.848, phoneBill.totalCost(), 0.001);
+        assertEquals(2501.848, phoneBill.totalCost(), 0.001);
     }
 
 }
